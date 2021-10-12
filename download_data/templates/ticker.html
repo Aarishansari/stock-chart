@@ -13,7 +13,7 @@
  
 </head>
 <body>
-    <h1 id = "search">{{ meta.name }} ({{ ticker }})</h1>
+    <h1 id = "search">{{ name }} ({{ ticker }})</h1>
     <div id="controls" style="width: 100%; overflow: hidden;">
     <div style="float: left; margin-left: 15px;">
         From: <input type="text" id="fromfield" class="amcharts-input" />
@@ -30,7 +30,11 @@
     </div>
   <div id="chartdiv"></div>   
 	<h3 id="search">Description</h3>
-	<p id="description"> {{ meta.description }} </p>  
+  <p></p>
+	<p id="description"> <b>Exchange :</b>  {{ exchange}} <br> <b>Details :</b>  {{ description }} </p>  
+
+  
+
 </body>
 {% block javascript %}
 <script >
